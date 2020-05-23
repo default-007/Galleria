@@ -57,7 +57,7 @@ class Image(models.Model):
     location = models.ForeignKey(Location,on_delete=models.CASCADE)
     
     def __str__(self):
-        return self.image_name
+        return self.name
 
     def save_image(self):
         self.save
@@ -81,7 +81,7 @@ class Image(models.Model):
 
     @classmethod
     def filter_by_location(cls, location):
-        image_location = Image.objects.filter(_name=location).all()
+        image_location = Image.objects.filter(location__name=location).all()
         return image_location
 
     @classmethod
