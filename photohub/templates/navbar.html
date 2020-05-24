@@ -8,21 +8,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle location" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Category
-                </a>
-                <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdown">
-                    {% for category in categorys %}
-                    <ul class="dropdown-item">
-                        <li href="{% url 'category' name=category.name %}">{{category.name}}
-                        </li>
-                    </ul>
-
-                    {% endfor %}
-                </div>
-            </li>
         </ul>
         <form class="form-inline my-2 my-md-0" action="/search" role="search">
             <input class="form-control mr-sm-2" type="search" placeholder="Search Category" name="imagesearch"
