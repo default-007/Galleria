@@ -8,6 +8,12 @@
 
 This is a Django application for personal gallery that allows a user to upload images for other to see and be able to to share by coping the image link.
 
+###### Categories
+
+- Art
+- Games
+- Food
+
 ## Live Link
 
 Click [View Site](https://galleria007.herokuapp.com/) to visit the site
@@ -16,14 +22,14 @@ Click [View Site](https://galleria007.herokuapp.com/) to visit the site
 
 ###### Home page
 
-<img src="https://raw.githubusercontent.com/default-007/Galleria/master/static/images/landingpage.png">
+<img src="https://raw.githubusercontent.com/default-007/Galleria/master/static/images/landing.png">
  
  ###### Search results
- <img src="https://raw.githubusercontent.com/default-007/Galleria/master/static/images/searchfood.png">
+ <img src="https://raw.githubusercontent.com/default-007/Galleria/master/static/images/search.png">
 
 ###### Image Details
 
- <img src="https://raw.githubusercontent.com/default-007/Galleria/master/static/images/modalscrn.png">
+ <img src="https://raw.githubusercontent.com/default-007/Galleria/master/static/images/modal.png">
  
 ## User Story  
   
