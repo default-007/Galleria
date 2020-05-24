@@ -96,7 +96,7 @@ class TestLocation(TestCase):
 class TestCategory(TestCase):
     #Set up Method
     def setUp(self):
-        self.category = Category(category_name='creativity')
+        self.category = Category(name='creativity')
 
     def tearDown(self):
 
@@ -117,7 +117,7 @@ class TestCategory(TestCase):
     def test_update_category(self):
         new_category_name = 'Art'
         self.category.update_category(self.category.id,new_category_name)
-        updated_category = Category.objects.filter(category_name='Art')
+        updated_category = Category.objects.filter(name='Art')
         self.assertFalse(len(updated_category)>0)
 
 

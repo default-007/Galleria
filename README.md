@@ -58,7 +58,17 @@ cd Galleria pip install -r requirements.txt
 ##### Install and activate Virtual
 
 ```bash
-- python3 -m venv virtual - source virtual/bin/activate
+- pip3 install virtualenv
+```
+
+```bash
+- . env/bin/activate
+```
+
+##### Create Virtual
+
+```bash
+virtualenv env
 ```
 
 ##### Install Dependencies
@@ -87,12 +97,6 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-##### Running the application
-
-```bash
-python manage.py server
-```
-
 ##### Testing the application
 
 ```bash
@@ -110,6 +114,10 @@ Open the application on your browser `127.0.0.1:8000`.
 ## Known Bugs
 
 - There are no known bugs currently but pull requests are allowed incase you spot a bug
+
+## Authors
+
+- **Brian Otieno** - _Initial work_ - [default-007](https://github.com/default-007)
 
 ## Contact Information
 
