@@ -28,6 +28,10 @@ nav {
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
+.boded {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
 .fas {
   text-align: center;
   color: #66fcf1;

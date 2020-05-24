@@ -8,14 +8,14 @@
     <a href="#b"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
 </div>
 
-<div class="container-fluid boded" id="b">
-    <div class="container">
+<div class="container-fluid " id="b">
+    <div class="container boded">
         <a href="/"><i class="fas fa-chevron-circle-up fa-3x text-center"></i></a>
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-4">
                 <h3>Gallery</h3>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-8">
                 <span id="locations">
                     {% for location in locations %}
                     <a class="btn btn-outline-info btn-sm" id="btn"
@@ -45,7 +45,7 @@
                         <div class="modal-body text-left">
                             <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
                             <p class="imgdesc text-center">{{image.description}}</p>
-                            <p>Categorys:</p><span class="btn btn-sm btn-outline-success">{{image.category}}</span>
+                            <p>Category:</p><span class="btn btn-sm btn-outline-success">{{image.category}}</span>
                             <p>Location: </p><a href="/location/{{image.location}}"
                                 class="btn btn-sm btn-outline-info">{{image.location}}</a>
                             <blockquote class="blockquote mb-0">
