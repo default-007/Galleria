@@ -3,14 +3,14 @@
 
 {% block content %}
 <div class="container-fluid landing">
-    <h2 class="text-center imagea">Welcome to Picture Share</h2>
-    <a href="#b" class="scroll"><button class="btn btn-sm btn-info image D-block mx-auto">Browse</button></a>
+    <h1>GALLERIA</h1>
+    <h2 class="imagea">Communicate with Art</h2>
+    <a href="#b"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
 </div>
 
 <div class="container-fluid boded" id="b">
     <div class="container">
-
-
+        <a href="/"><i class="fas fa-chevron-circle-up fa-3x text-center"></i></a>
         <div class="row">
             <div class="col-md-7">
                 <h3>Gallery</h3>
@@ -45,9 +45,11 @@
                         <div class="modal-body">
                             <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
                             <p class="imgdesc text-center">{{image.description}}</p>
-                            <span class="btn btn-sm btn-outline-success">{{image.category}}</span> <a
-                                href="/location/{{image.location}}"
-                                class="btn btn-sm btn-outline-info">{{image.location}}</a>
+                            <p>By: {{image.author}} </p>
+                            <p>On: {{image.date}} </p>
+                            <p>Category:<span class="btn btn-sm btn-outline-success">{{image.category}}</span></p>
+                            <p>Location: <a href="/location/{{image.location}}"
+                                    class="btn btn-sm btn-outline-info">{{image.location}}</a></p>
                         </div>
                         <div class="modal-footer">
                             <input class="form-control input-lg" type="text" value="{{image.image.url}}"
@@ -61,6 +63,7 @@
             </div>
             {% endfor %}
         </div>
+
     </div>
 </div>
 
