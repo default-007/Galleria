@@ -11,7 +11,7 @@ body {
 nav {
   background-color: #45a29e;
 }
-.btn {
+.btn-search {
   background-color: #0b0c10;
   color: #c5c6c7;
 }
@@ -55,17 +55,17 @@ a {
 }
 
 .modalcard {
-  background-color: rgba(10, 10, 10, 0.8);
-  color: white;
+  background-color: #66fcf1;
+  color: #c5c6c7;
   padding: 3%;
   border: none;
 }
 h3 {
-  color: white;
+  color: #45a29e;
   font-family: "Special Elite", cursive;
 }
 #locations {
-  color: white;
+  color: #45a29e;
   font-family: "Special Elite", cursive;
 }
 hr {
@@ -85,10 +85,4 @@ hr {
 }
 #btn {
   margin-right: 6px;
-}
-.cat {
-  float: center;
-  background: gray;
-  padding: 4px;
-  border-radius: 6px;
 }

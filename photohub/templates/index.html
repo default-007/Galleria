@@ -42,14 +42,19 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body text-left">
                             <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
                             <p class="imgdesc text-center">{{image.description}}</p>
-                            <p>By: {{image.author}} </p>
-                            <p>On: {{image.date}} </p>
-                            <p>Category:<span class="btn btn-sm btn-outline-success">{{image.category}}</span></p>
-                            <p>Location: <a href="/location/{{image.location}}"
-                                    class="btn btn-sm btn-outline-info">{{image.location}}</a></p>
+                            <p>Categorys:</p><span class="btn btn-sm btn-outline-success">{{image.category}}</span>
+                            <p>Location: </p><a href="/location/{{image.location}}"
+                                class="btn btn-sm btn-outline-info">{{image.location}}</a>
+                            <blockquote class="blockquote mb-0">
+                                <footer class="blockquote-footer">Posted by: <cite
+                                        title="{{image.author}}">{{image.author}} </cite></footer>
+                            </blockquote>
+                            <blockquote class="blockquote mb-0">
+                                <footer class="blockquote-footer">On: <cite title="date">{{image.date}} </cite></footer>
+                            </blockquote>
                         </div>
                         <div class="modal-footer">
                             <input class="form-control input-lg" type="text" value="{{image.image.url}}"
