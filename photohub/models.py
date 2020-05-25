@@ -46,6 +46,11 @@ class Category(models.Model):
     def update_category(cls, id, value):
         cls.objects.filter(id=id).update(name=value)
 
+    @classmethod
+    def get_category(cls):
+        categorys = Category.objects.all()
+        return categorys
+
 
 class Image(models.Model):
     image = models.ImageField(upload_to='pics')
@@ -83,6 +88,11 @@ class Image(models.Model):
     def filter_by_location(cls, location):
         image_location = Image.objects.filter(location__name=location).all()
         return image_location
+
+    @classmethod
+    def filter_by_category(cls, category):
+        image_category = Image.objects.filter(category__name=category).all()
+        return image_category
 
     @classmethod
     def search_by_category(cls, category):

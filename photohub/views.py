@@ -6,14 +6,21 @@ from . models import Image, Location, Category
 def index(request):
     images = Image.objects.all()
     locations = Location.get_locations()
+    categorys = Category.get_category()
     print(locations)
-    return render(request, 'index.html', {'images': images[::-1], 'locations': locations})
+    print(categorys)
+    return render(request, 'index.html', {'images': images[::-1], 'locations': locations, 'categorys': categorys})
 
 
 def image_location(request, location):
     images = Image.filter_by_location(location)
     print(images)
     return render(request, 'location.html', {'location_images': images})
+
+def image_category(request, category):
+    images = Image.filter_by_category(category)
+    print(images)
+    return render(request, 'category.html', {'category_images': images})
 
 
 def search_results(request):

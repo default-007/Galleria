@@ -5,12 +5,16 @@
 <div class="container-fluid landing">
     <h1>GALLERIA</h1>
     <h2 class="imagea">Communicate with Art</h2>
-    <a href="#b"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
+    <div class="arrow bounce">
+        <a class="fa fa-angle-double-down fa-3x" href="#b"></a>
+    </div>
 </div>
 
 <div class="container-fluid " id="b">
-    <div class="container boded">
-        <a href="/"><i class="fas fa-chevron-circle-up fa-3x text-center"></i></a>
+    <div class="container">
+        <div class="arrow bounce">
+            <a class="fa fa-angle-double-up fa-3x" href="/"></a>
+        </div>
         <div class="row">
             <div class="col-md-4">
                 <h3>Gallery</h3>
@@ -45,7 +49,8 @@
                         <div class="modal-body text-left">
                             <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
                             <p class="imgdesc text-center">{{image.description}}</p>
-                            <p>Category:</p><span class="btn btn-sm btn-outline-success">{{image.category}}</span>
+                            <p>Category:</p><a href="/category/{{image.category}}" class=" btn btn-sm
+                                btn-outline-success">{{image.category}}</a>
                             <p>Location: </p><a href="/location/{{image.location}}"
                                 class="btn btn-sm btn-outline-info">{{image.location}}</a>
                             <blockquote class="blockquote mb-0">
