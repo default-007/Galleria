@@ -13,9 +13,6 @@ class Location(models.Model):
     def delete_location(self):
         self.delete
 
-    def update_location(self):
-        self.update
-
     @classmethod
     def update_location(cls, id, value):
         cls.objects.filter(id=id).update(name=value)
@@ -38,9 +35,6 @@ class Category(models.Model):
 
     def delete_category(self):
         self.delete
-
-    def update_category(self):
-        self.update
 
     @classmethod
     def update_category(cls, id, value):
